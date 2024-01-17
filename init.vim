@@ -62,6 +62,8 @@ set wildmode=list:longest
 set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx 
 
 set completeopt=menuone,noselect
+set listchars=tab:··
+set list
 
 " Resize split windows using arrow keys by pressing: 
 " CTRL+UP, CTRL+DOWN, CTRL+LEFT, or CTRL+RIGHT. 
