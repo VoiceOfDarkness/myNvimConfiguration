@@ -19,6 +19,7 @@ call plug#begin()
   
   " Statusline
   Plug 'nvim-lualine/lualine.nvim'
+  Plug 'nvim-tree/nvim-web-devicons'
 
   Plug 'ryanoasis/vim-devicons'
 call plug#end()
@@ -54,14 +55,13 @@ set history=1000
 set wildmenu
 set wildmode=list:longest
 set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
-
-autocmd BufReadPost * %s/\r/
+set splitbelow
+command! Term :horizontal term
 
 set completeopt=menuone,noselect
 set listchars=tab:··
 set list
 set encoding=UTF-8
-set guifont=DroidSansMono\ Nerd\ Font\ 11
 
 " Resizing split windows using arrow keys
 noremap <c-up> <c-w>+
